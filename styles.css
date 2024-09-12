@@ -1,5 +1,6 @@
 html {
     font-family: system-ui, sans-serif, 'Helvetica Neue';
+    font-size: 18px;
 }
 
 
@@ -38,9 +39,8 @@ ul {
 nav {
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    padding: 10px 48px 0px 48px;
     height: 56px;
-    position: sticky;
 }
 
 
@@ -52,6 +52,7 @@ li, a {
 }
 
 
+
 main {
     width: 800px;
     margin: auto;
@@ -60,27 +61,33 @@ main {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    background-color: bisque;
 }
 
 
 .sobre {
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.404);
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.199);
+    border-radius: 12px;
     margin: 24px;
-    padding: 8px;
+    max-width: 360px;
 }
 
 
 .sobre > a > img {
-    width: 200px;
+    border-radius: 12px;
+    max-width: 320px;
 }
 
-.sobre > a {
+.sobre > a > p{
+    text-align: center;
+    font-size: 1.2rem;
     color: black;
+    margin: 8px;
 }
 
 
