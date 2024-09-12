@@ -82,3 +82,24 @@ main {
 .sobre > a {
     color: black;
 }
+
+
+footer {
+    margin: 80px 0 0 0;
+}
+
+
+footer > p {
+    background-color: burlywood;
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+}
+
+
+footer > p > a {
+    background-color: white;
+    color: rgb(38, 138, 204);
+    border-radius: 4px;
+    padding: 2px 4px;
+}
