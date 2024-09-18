@@ -13,53 +13,39 @@ body {
 header {
     background-image: url(img/bandeira_02.jpg);
     background-size: cover;
+    max-width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
-header > * {
-    margin: 16px;
+h1 {
+    font-size: 64pt;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.445);
+    color: whitesmoke;
 }
 
 
-.hero-sec > img {
-    width: 220px;
-}
-
-
-.resumo {
-    width: 540px;
-}
-
-
-header,
-nav,
 ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-}
-
-
-nav {
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 48px 0px 48px;
-    height: 56px;
-}
-
-
-li, a {
     list-style: none;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    margin: 6px;
+    padding: 0;
+    gap: 16px
 }
 
 
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    text-shadow: 0 0 4px black;
+}
 
 main {
-    width: 800px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -67,51 +53,62 @@ main {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 6px 24px;
 }
 
-
-.sobre {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.199);
-    border-radius: 12px;
-    margin: 24px;
-    max-width: 360px;
-}
-
-
-.sobre > a > img {
-    border-radius: 12px;
-    max-width: 320px;
-}
-
-.sobre > a > p{
-    text-align: center;
-    font-size: 1.2rem;
+.container a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
     color: black;
+}
+
+.mais {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    padding: 0 8px 8px 8px;
+}
+
+
+.mais p {
     margin: 8px;
 }
 
 
+.mais img {
+    border-radius: 8px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.mais:hover {
+    box-shadow: 0 1px 20px rgba(128, 128, 128, 0.301);
+}
+
+
+
 footer {
-    margin: 80px 0 0 0;
-}
-
-
-footer > p {
-    background-color: burlywood;
+    background-color: rgb(48, 83, 99);
     text-align: center;
-    margin: 0;
-    padding: 16px;
+    padding: 12px;
+    margin-top: 48px;
 }
 
+footer p {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
 
-footer > p > a {
+footer a {
     background-color: white;
     color: rgb(38, 138, 204);
     border-radius: 4px;
-    padding: 2px 4px;
+    padding: 4px 6px;
 }
